@@ -1,0 +1,125 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100px;
+  background-color: #454899;
+  padding-top: 20px;
+  z-index: 1030;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .nav-link {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  i {
+    scale: 200%;
+    margin: 10px;
+  }
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  margin-left: 145px;
+
+  .search-input-group {
+    border: 1px solid #ced4da;
+    border-radius: 30px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+
+    .form-control {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+    }
+
+    i {
+      margin-right: 10px;
+      color: #6c757d;
+    }
+  }
+
+  .icon-combo-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ced4da;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 80px;
+    .divider {
+      width: 1px;
+      height: 24px;
+      background-color: #ced4da;
+      margin: 0 10px;
+    }
+
+    i {
+      color: #007bff;
+
+      &:hover {
+        background-color: #e9ecef;
+      }
+    }
+  }
+
+  .containerItem {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ced4da;
+    border-radius: 30px;
+
+    .item {
+      margin: 15px;
+      width: 30vw;
+      height: 15vh;
+      flex-basis: 200px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      i {
+        scale: 5;
+        color: #007bff;
+        margin: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 1rem;
+        bottom: 0;
+      }
+    }
+  }
+}
+
